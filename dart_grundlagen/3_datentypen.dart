@@ -30,6 +30,11 @@ void main( )
 //?         das ist ein blauer Kommentar
 //!         das ist ein roter Kommentar
 //*         das ist ein hellgrüner Kommentar
-//todo      das ist ein hellgrüner Kommentar]
+//todo      das ist ein oranger Kommentar
+/**
+ * ?
+ * !
+ *  todo   123      das ist kein
+*/
 
 
