@@ -1,30 +1,68 @@
 
-void main( )
-
-{
-  int alter = 32;   //!      intiger = itteger
-
-  double meinDouble = 4.4;  //?  double
+void main(){
   
-  bool meinBool = false;   // bool
+  int alter = 32;    //Iteger
 
+  double meinDouble = 4.4;  // double
 
-  // ###########################################
+  bool meinBool = false; // bool
 
-  String meinString = "DerBall";
+  //  ###############################  
 
-  String zweitenString = "ist rot.";
+  String meinString = "Der Ball";
 
-  String verkettet = meinString + zweitenString;   
+  String zweitenString = " ist rot.";
 
-  print (verkettet);
+  String verkettet = meinString + zweitenString;
 
-  print (meinString + zweitenString);                                                         
+  print(verkettet);
 
-  print (9);
+  print(meinString + zweitenString);
 
+  print(meinString + " ist blau.");
 
+  String multiline = ''' das
+  ist 
+  ein 
+  string
+  ''';
+
+  print(multiline);
+
+  int wert = 3;
+
+  String beispiel = "Der Wert ist: $wert";
+
+  print(beispiel);
+
+  // ! Statisch
+
+  int alter1 = 32;    //Iteger
+
+  double meinDouble1 = 4.4;  // double
+
+  bool meinBool1 = false; // bool
+
+  String meinString1 = "Der Ball";
+
+  // ! Automatisch   -->  Datentyp zu weisen erkent es automatisch
+
+  var alter2 = 32;    //Iteger
+
+  var meinDouble2 = 4.4;  // double
+
+  var meinBool2 = false; // bool
+
+  var meinString2 = "Der Ball";
+
+  dynamic variable3 ;
+
+  variable3 = 3;
+
+  variable3 = "string";
 }
+
+
 
 //          das ist ein grüner Komentar
 //?         das ist ein blauer Kommentar
