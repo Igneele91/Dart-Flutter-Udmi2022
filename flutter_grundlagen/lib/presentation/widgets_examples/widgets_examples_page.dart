@@ -8,8 +8,8 @@ class WidgetsExamplesPage extends StatelessWidget {
     return Scaffold(
         // backgroundcolor: Colors.grey[900],
         appBar: AppBar(
-          title: Text("my app FF"),
+          title: const Text("myapp"),
         ), // AppBar
-        body: Placeholder()); // Scaffold
+        body: const Placeholder()); // Scaffold
   }
 }
