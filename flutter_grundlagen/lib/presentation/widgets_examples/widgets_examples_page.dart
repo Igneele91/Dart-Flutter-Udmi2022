@@ -6,9 +6,15 @@ class WidgetsExamplesPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        // backgroundcolor: Colors.grey[900],
+        backgroundColor: Colors.grey[900],
         appBar: AppBar(
-          title: const Text("myapp"),
+          leading: const Icon(
+            Icons.home,
+            size: 30,
+          ),
+          centerTitle: true, // mitte legen titel
+          backgroundColor: Colors.orange[700],
+          title: const Text("Widgets Examples"),
         ), // AppBar
         body: const Placeholder()); // Scaffold
   }
