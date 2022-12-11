@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_grundlagen/presentation/widgets_examples_page.dart';
+import 'package:flutter_grundlagen/presentation/widgets_examples/widgets_examples_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,9 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: WidgetsExamplesPage()
-    );
+    return MaterialApp(home: WidgetsExamplesPage());
   }
 }
-
