@@ -17,6 +17,6 @@ class WidgetsExamplesPage extends StatelessWidget {
           backgroundColor: Colors.orange[700],
           title: const Text("Widgets Examples"),
         ), // AppBar
-        body: ContainerTextExample()); // Scaffold
+        body: const ContainerTextExample()); // Scaffold
   }
 }
