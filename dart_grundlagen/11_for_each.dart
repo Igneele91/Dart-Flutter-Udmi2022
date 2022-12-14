@@ -17,6 +17,6 @@ void main() {
     liste2.add(element);
   });
 
-  print(liste);
-  print(liste2);
+  print(liste); // liste  [3.4.5.6.7.8]
+  print(liste2); //  liste  [4,5,6,7,8,6]
 }
