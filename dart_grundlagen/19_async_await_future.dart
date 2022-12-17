@@ -42,5 +42,7 @@ class DataFetcher {
     */
 
     return _parsedData;
+
+    //! wichtig Merken: Future / async und await aus der lektion !
   }
 }
