@@ -5,8 +5,8 @@ void main() {
   Car car2 = Car();
   car2.color = "blau";
 
-  car1.sayColor();
-  car2.sayColor();
+  car1.sayColor(); // das löst rot aus
+  car2.sayColor(); // das löst blau aus
 
   car1.drive();
 }
@@ -17,7 +17,7 @@ class Car {
 
   //! methoden
   void drive() {
-    print("car is moving");
+    print("car is moving"); // das auto bewegt sich
   }
 
   void sayColor() {
