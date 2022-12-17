@@ -17,7 +17,7 @@ void main() {
   sub1.cancel(); //! subscription beenden */
 
   StreamSubscription sub2 = numberStream.listen((event) {
-    print("sub2  :  $event");
+    print("sub2  :  $event"); // durch die kombination von $ ist es möglich
   });
 }
 
