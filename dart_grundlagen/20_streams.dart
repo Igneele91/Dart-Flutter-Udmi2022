@@ -1,10 +1,12 @@
 import 'dart:async';
 
 void main() {
-  Stream numberStream = NumberGenerator().getStream.asBroadcastStream();
+  Stream numberStream = NumberGenerator()
+      .getStream
+      .asBroadcastStream(); // mehre streams in sonst dart sonst nur 1 möglich
   //! broadcast -> ermöglicht mehrere subscriber
   StreamSubscription sub1 = numberStream.listen((event) {
-    print(event);
+    print(event); // ereignis vom event aus drückt
   },
       onDone: () {}, //! was soll passieren wenn stream geschlossen
       onError: (error) {}, //! was soll bei einem error passieren
