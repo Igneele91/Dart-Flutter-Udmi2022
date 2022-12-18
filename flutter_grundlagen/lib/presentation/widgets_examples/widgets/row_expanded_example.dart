@@ -17,12 +17,17 @@ class RowExpandedExample extends StatelessWidget {
           width: 10,
         ),
         Expanded(
+          flex: 1, // die flex 1 bekommt weniger
           child: Container(
             color: Colors.green,
             height: 100,
           ),
         ),
+        const SizedBox(
+          width: 10,
+        ),
         Expanded(
+          flex: 2, // die flex 2 mehr
           child: Container(
             color: Colors.red,
             height: 100,

@@ -24,12 +24,20 @@ class WidgetsExamplesPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start, // X achse
             crossAxisAlignment: CrossAxisAlignment.center, // Y achse
-            children: [
-              const ContainerTextExample(),
-              const SizedBox(
+            children: const [
+              ContainerTextExample(),
+              SizedBox(
                 height: 10,
               ),
               RowExpandedExample(),
+              SizedBox(
+                height: 10,
+              ),
+              RowExpandedExample(),
+              SizedBox(
+                height: 30,
+              ),
+              ContainerTextExample(),
             ],
           ),
         ),
