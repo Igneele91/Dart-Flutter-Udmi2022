@@ -18,32 +18,36 @@ class WidgetsExamplesPage extends StatelessWidget {
         title: const Text("Widgets Examples"),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start, // X achse
-          crossAxisAlignment: CrossAxisAlignment.center, // Y achse
-          children: [
-            const ContainerTextExample(),
-            SizedBox(
-              height: 10,
-            ),
-            Container(
-              color: Colors.yellow,
-              width: 100,
-              height: 100,
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            Container(
-              color: Colors.green,
-              width: 100,
-              height: 100,
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            const ContainerTextExample(),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start, // X achse
+            crossAxisAlignment: CrossAxisAlignment.center, // Y achse
+            children: [
+              const ContainerTextExample(),
+              const SizedBox(
+                height: 10,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0), // kleiner gemacht
+                child: Container(
+                  color: Colors.yellow, // pading box verwenden lampe
+                  height: 100,
+                ),
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Container(
+                color: Colors.green,
+                height: 100,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const ContainerTextExample(),
+            ],
+          ),
         ),
       ),
     );

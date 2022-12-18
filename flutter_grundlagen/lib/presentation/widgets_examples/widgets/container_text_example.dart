@@ -6,9 +6,9 @@ class ContainerTextExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // Container grau1,
+      //! Container grau1,
       height: 180,
-      width: 300,
+      // width: 300,
       decoration: BoxDecoration(
           color: Colors.grey,
           border: Border.all(
@@ -21,7 +21,7 @@ class ContainerTextExample extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           elevation: 8,
           child: Container(
-            // Container blau2
+            //! Container blau2
             alignment: Alignment.center, // Schatten3Deffektmit rand schwarz
             //padding: const EdgeInsets.only(bottom: 20),
             height: 100,
