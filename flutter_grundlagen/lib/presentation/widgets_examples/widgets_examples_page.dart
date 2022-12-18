@@ -19,18 +19,30 @@ class WidgetsExamplesPage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start, // X achse
+          crossAxisAlignment: CrossAxisAlignment.center, // Y achse
           children: [
             const ContainerTextExample(),
+            SizedBox(
+              height: 10,
+            ),
             Container(
               color: Colors.yellow,
+              width: 100,
               height: 100,
+            ),
+            SizedBox(
+              height: 10,
             ),
             Container(
               color: Colors.green,
+              width: 100,
               height: 100,
             ),
+            SizedBox(
+              height: 10,
+            ),
+            const ContainerTextExample(),
           ],
         ),
       ),
