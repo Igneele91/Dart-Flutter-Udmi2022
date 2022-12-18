@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/container_text_example.dart';
+import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/row_expanded_example.dart';
 
 class WidgetsExamplesPage extends StatelessWidget {
   const WidgetsExamplesPage({Key? key}) : super(key: key);
@@ -28,24 +29,7 @@ class WidgetsExamplesPage extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0), // kleiner gemacht
-                child: Container(
-                  color: Colors.yellow, // pading box verwenden lampe
-                  height: 100,
-                ),
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Container(
-                color: Colors.green,
-                height: 100,
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              const ContainerTextExample(),
+              RowExpandedExample(),
             ],
           ),
         ),
