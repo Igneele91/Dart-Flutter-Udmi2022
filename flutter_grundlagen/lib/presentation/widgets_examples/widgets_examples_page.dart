@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/container_text_example.dart';
+import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/profile_picture.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/row_expanded_example.dart';
 
 class WidgetsExamplesPage extends StatelessWidget {
@@ -15,7 +16,7 @@ class WidgetsExamplesPage extends StatelessWidget {
           size: 30,
         ),
         centerTitle: true,
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.pink,
         title: const Text("Widgets Examples"),
       ),
       body: Center(
@@ -33,7 +34,7 @@ class WidgetsExamplesPage extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-
+              ProfilePicutre()
             ],
           ),
         ),

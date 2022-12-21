@@ -1,3 +1,18 @@
+import 'package:flutter/material.dart';
 
+class ProfilePicutre extends StatelessWidget {
+  const ProfilePicutre({Key? key}) : super(key: key);
 
-class Profilepicutre ;
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: Center(
+        child: Container(
+          height: 200,
+          width: 200,
+          color: Colors.blue,
+        ),
+      ),
+    );
+  }
+}
