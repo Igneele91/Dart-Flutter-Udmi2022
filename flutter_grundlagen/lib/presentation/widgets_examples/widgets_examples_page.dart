@@ -35,6 +35,9 @@ class WidgetsExamplesPage extends StatelessWidget {
                 height: 10,
               ),
               ProfilePicutre()
+              SizedBox(
+                height: 10,
+              ),
             ],
           ),
         ),
