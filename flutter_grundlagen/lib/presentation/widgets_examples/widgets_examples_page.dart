@@ -33,11 +33,7 @@ class WidgetsExamplesPage extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              RowExpandedExample(),
-              SizedBox(
-                height: 30,
-              ),
-              ContainerTextExample(),
+
             ],
           ),
         ),
