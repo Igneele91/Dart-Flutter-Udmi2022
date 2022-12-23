@@ -8,7 +8,7 @@ class ProfilePicutre extends StatelessWidget {
     return Expanded(
       child: Center(
         child: Container(
-          height: 200,
+          height: 250,
           width: 200,
           color: Colors.blue,
           child: const CircleAvatar(
