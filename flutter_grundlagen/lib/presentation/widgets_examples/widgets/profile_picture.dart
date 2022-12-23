@@ -13,8 +13,7 @@ class ProfilePicutre extends StatelessWidget {
           color: Colors.blue,
           child: const CircleAvatar(
               radius: 200,
-              backgroundImage:
-                  AssetImage("assets/images/Hotpotprofilbildai.png")),
+              backgroundImage: AssetImage("assets/images/FoxRightSide.jpg")),
         ),
       ),
     );
