@@ -25,17 +25,17 @@ class WidgetsExamplesPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start, // X achse
             crossAxisAlignment: CrossAxisAlignment.center, // Y achse
-            children: const [
-              ContainerTextExample(),
-              SizedBox(
+            children: [
+              const ContainerTextExample(),
+              const SizedBox(
                 height: 10,
               ),
-              RowExpandedExample(),
-              SizedBox(
+              const RowExpandedExample(),
+              const SizedBox(
                 height: 10,
               ),
-              ProfilePicutre(),
-              SizedBox(
+              const ProfilePicture(),
+              const SizedBox(
                 height: 10,
               ),
               Container(
@@ -45,7 +45,7 @@ class WidgetsExamplesPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   child: Image.asset(
                     "assets/images/FoxRightSide.jpg",
-                    fit: Boxfit.cover,
+                    fit: BoxFit.cover,
                   ),
                 ),
               )
