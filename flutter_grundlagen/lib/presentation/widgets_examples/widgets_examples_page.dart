@@ -44,10 +44,10 @@ class WidgetsExamplesPage extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
                   child: Image.asset(
-                    "assets/images/FoxRightSide.jpg",
+                    "assets/images/fox-squirrel.jpg",
                     fit: BoxFit.cover,
                   ),
-                ),
+               ),
               )
             ],
           ),

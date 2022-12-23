@@ -12,7 +12,7 @@ class ContainerTextExample extends StatelessWidget {
       decoration: BoxDecoration(
           color: Colors.grey,
           border: Border.all(
-            color: Colors.black,
+            color: Colors.lightGreen,
             width: 4,
           ),
           borderRadius: BorderRadius.circular(16)),

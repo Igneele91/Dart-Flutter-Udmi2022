@@ -7,16 +7,33 @@ class ProfilePicture extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: Center(
-        child: Container(
-          height: 250,
+        child: SizedBox(
+          height: 230,
           width: 200,
-          color: Colors.blue,
+
           child: Stack(
-            children: const [
-              CircleAvatar(
-                radius: 200,
-                backgroundImage: AssetImage("assets/images/FoxRightSide.jpg"),
+            children: [
+              const SizedBox(
+                height: 200,
+                child: CircleAvatar(
+                  radius: 200,
+                  backgroundImage: AssetImage("assets/images/fox_design-1.jpg"),
+                ),
               ),
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: Container(
+
+                  height: 60,
+                  width: 200,
+                  decoration: BoxDecoration(
+                    color: Colors.grey.withOpacity(0.7), // durchsichtigkeit
+                    borderRadius: BorderRadius.circular(10),
+
+                  ),
+                  child: Text("Flutter Freelancer"),
+                ),
+              )
             ],
           ),
         ),
