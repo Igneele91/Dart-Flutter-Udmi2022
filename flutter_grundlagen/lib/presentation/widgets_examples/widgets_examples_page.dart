@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/container_text_example.dart';
+import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/media_query_example.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/profile_picture.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/rectangular_image.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/row_expanded_example.dart';
@@ -17,10 +18,11 @@ class WidgetsExamplesPage extends StatelessWidget {
           size: 30,
         ),
         centerTitle: true,
-        backgroundColor: Colors.pink,
+        backgroundColor: Colors.pink[200],
         title: const Text("Widgets Examples"),
       ),
       body: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(), // Nimmt beim Scrollen den effekt weg blau
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
           child: Column(
@@ -33,13 +35,17 @@ class WidgetsExamplesPage extends StatelessWidget {
               ),
               RowExpandedExample(),
               SizedBox(
-                height: 10,
+                height: 30,
               ),
               ProfilePicture(),
               SizedBox(
-                height: 10,
+                height: 30,
               ),
               RectImage(),
+              SizedBox(
+                height: 30,
+              ),
+              MediaQueryExample(),
             ],
           ),
         ),
