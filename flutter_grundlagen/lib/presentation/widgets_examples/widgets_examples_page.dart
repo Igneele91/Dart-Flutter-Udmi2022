@@ -20,7 +20,7 @@ class WidgetsExamplesPage extends StatelessWidget {
         backgroundColor: Colors.pink,
         title: const Text("Widgets Examples"),
       ),
-      body: Center(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
           child: Column(
