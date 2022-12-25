@@ -1,7 +1,4 @@
-
 import 'package:flutter/material.dart';
-
-
 
 class MediaQueryExample extends StatelessWidget {
   const MediaQueryExample({Key? key}) : super(key: key);
@@ -10,10 +7,10 @@ class MediaQueryExample extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-  return Container(
-    height: size.height * 0.5,
-    width: size.width * 0.8,
-    color: Colors.green,
-  );
+    return Container(
+      height: size.height * 0.5,
+      width: size.width * 0.8,
+      color: Colors.green,
+    );
   }
 }
