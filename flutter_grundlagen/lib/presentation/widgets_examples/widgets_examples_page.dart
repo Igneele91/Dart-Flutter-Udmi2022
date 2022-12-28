@@ -82,19 +82,19 @@ class WidgetsExamplesPage extends StatelessWidget {
                 height: 30,
               ),
               CustomButton(
-                onPressed: () {
-                  print("Custom Button Pressed 1!");
-                },
-                text: 'Button 1'
-              ),
+                  onPressed: () {
+                    print("Custom Button Pressed 1!");
+                  },
+                  text: 'Button 1'),
               const SizedBox(
                 height: 30,
               ),
               CustomButton(
                 onPressed: () {
                   print("Custom Button Pressed 2! ");
-                },  text: 'Button 2',
-              ),
+                },
+                text: 'Button 2',
+              )
             ],
           ),
         ),

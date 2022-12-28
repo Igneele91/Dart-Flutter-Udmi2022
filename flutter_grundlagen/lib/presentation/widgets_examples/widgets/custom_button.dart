@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class CustomButton extends StatelessWidget {
   final Function onPressed;
   final String text;
-  const CustomButton({Key? key, required this.onPressed, required this.text}) : super(key: key);
+  const CustomButton({Key? key, required this.onPressed, required this.text})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +17,11 @@ class CustomButton extends StatelessWidget {
             // Text in der Mittte einfach Child und dan Center widget
             borderRadius: BorderRadius.circular(8),
             color: Colors.blue[200]),
-        child: const Center(
+        child: Center(
             child: Text(
-          "Text",
-          style: TextStyle(
-              fontSize: 16,
+          text,
+          style: const TextStyle(
+              fontSize: 14,
               fontWeight: FontWeight.bold,
               fontStyle: FontStyle.italic),
         )),
