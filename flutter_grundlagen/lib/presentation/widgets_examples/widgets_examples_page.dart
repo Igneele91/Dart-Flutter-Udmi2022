@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/container_text_example.dart';
+import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/custom_button.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/media_query_example.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/page_view_exmaple.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/profile_picture.dart';
@@ -23,36 +24,77 @@ class WidgetsExamplesPage extends StatelessWidget {
         title: const Text("Widgets Examples"),
       ),
       body: SingleChildScrollView(
-        physics: const BouncingScrollPhysics(), // Nimmt beim Scrollen den effekt weg blau
+        physics:
+            const BouncingScrollPhysics(), // Nimmt beim Scrollen den effekt weg blau
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start, // X achse
             crossAxisAlignment: CrossAxisAlignment.center, // Y achse
-            children: const [
-              ContainerTextExample(),
-              SizedBox(
+            children: [
+              const ContainerTextExample(),
+              const SizedBox(
                 height: 10,
               ),
-              RowExpandedExample(),
-              SizedBox(
+              const RowExpandedExample(),
+              const SizedBox(
                 height: 30,
               ),
-              ProfilePicture(),
-              SizedBox(
+              const ProfilePicture(),
+              const SizedBox(
                 height: 30,
               ),
-              RectImage(),
-              SizedBox(
+              const RectImage(),
+              const SizedBox(
                 height: 30,
               ),
-              MediaQueryExample(),
-              SizedBox(
+              const MediaQueryExample(),
+              const SizedBox(
                 height: 30,
               ),
-              PageViewExample(),
-
-
+              const PageViewExample(),
+              const SizedBox(
+                height: 30,
+              ),
+              IconButton(
+                  // Button mit einem Symbol
+                  onPressed: () {
+                    print("Icon Button pressed!");
+                  },
+                  icon: const Icon(
+                    Icons.home,
+                    color: Colors.white,
+                  )),
+              const SizedBox(
+                height: 30,
+              ),
+              TextButton(
+                  onPressed: () {
+                    print("Text Button Pressed ");
+                  },
+                  child: Container(
+                      color: Colors.purple,
+                      child: const Text(
+                        "Text Button",
+                        style: TextStyle(color: Colors.white),
+                      ))),
+              const SizedBox(
+                height: 30,
+              ),
+              CustomButton(
+                onPressed: () {
+                  print("Custom Button Pressed 1!");
+                },
+                text: 'Button 1'
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              CustomButton(
+                onPressed: () {
+                  print("Custom Button Pressed 2! ");
+                },  text: 'Button 2',
+              ),
             ],
           ),
         ),
