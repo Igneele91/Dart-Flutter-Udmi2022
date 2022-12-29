@@ -4,8 +4,12 @@ class CustomButton extends StatelessWidget {
   final Function onPressed;
   final String text;
   final Color buttonColor;
-  const CustomButton({Key? key, required this.onPressed, required this.text, required this.buttonColor, })
-      : super(key: key);
+  const CustomButton({
+    Key? key,
+    required this.onPressed,
+    required this.text,
+    required this.buttonColor,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +22,7 @@ class CustomButton extends StatelessWidget {
           height: 30,
           width: 100,
           decoration: BoxDecoration(
-              // Text in der Mittte einfach Child und dan Center widget
+              // ? Text in der Mittte einfach Child und dan Center widget
               borderRadius: BorderRadius.circular(8),
               color: buttonColor),
           child: Center(
@@ -34,3 +38,18 @@ class CustomButton extends StatelessWidget {
     );
   }
 }
+
+/** ***********************************************************************
+ *                                                                        *
+ *                                                                        *
+ *                                                                        *
+                                                                          *
+ *  ! HHSLLALKSKNFM                                                       *
+ *  ? dfmkmdklgmksmflö,fdl,                                               *
+ *  * djsnfnskjdfnsmnf                                                    *
+ *  Todo dfsnfklmdsfklmklfmcjnjncjknc                                     *                             *
+                                                                          *
+                                                                          *
+                                                                          *
+                                                                          *                                                                           *
+ *****************************************************************************/
