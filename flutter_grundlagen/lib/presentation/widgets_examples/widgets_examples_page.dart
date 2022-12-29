@@ -81,7 +81,8 @@ class WidgetsExamplesPage extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              CustomButton(
+              CustomButton( // wenn er die farbe nicht findet ! wegen null verwende
+                buttonColor: Colors.orange[200]!,
                   onPressed: () {
                     print("Custom Button Pressed 1!");
                   },
@@ -89,7 +90,8 @@ class WidgetsExamplesPage extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              CustomButton(
+              CustomButton( // wenn er die farbe nicht findet ! wegen null verwende
+                buttonColor: Colors.green[200]!,
                 onPressed: () {
                   print("Custom Button Pressed 2! ");
                 },
