@@ -61,11 +61,13 @@ class _CounterAppPageState extends State<CounterAppPage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             FloatingActionButton(
+              heroTag: "btn1",
               onPressed: () => _decrementCounter(),
               backgroundColor: Colors.red,
               child: const Icon(Icons.remove),
             ),
             FloatingActionButton(
+              heroTag: "btn2",
               onPressed: () => _incrementCounter(),
               backgroundColor: Colors.blue,
               child: const Icon(Icons.add),
