@@ -7,6 +7,8 @@ import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/profile
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/rectangular_image.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets/row_expanded_example.dart';
 
+import '../../application/theme_service.dart';
+
 class WidgetsExamplesPage extends StatelessWidget {
   const WidgetsExamplesPage({Key? key}) : super(key: key);
 
@@ -97,7 +99,13 @@ class WidgetsExamplesPage extends StatelessWidget {
 
                 },
                 text: 'Go to Screen 1',
-              )
+              ),
+              const SizedBox(
+                width: 15,
+              ),
+              Switch(value: Provider.of<ThemeService>(context).isDarkModeOn, onChanged: (value) {
+                Provider.of<ThemeService>(context, listen:  false).toggleTheme();
+              })
             ],
           ),
         ),

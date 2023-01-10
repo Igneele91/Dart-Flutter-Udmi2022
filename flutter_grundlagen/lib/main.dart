@@ -15,19 +15,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
-        themeMode:
-          themeService.isDarkModeOn ? ThemeMode.dark : ThemeMode.light,
+        themeMode: themeService.isDarkModeOn ? ThemeMode.dark : ThemeMode.light,
         debugShowCheckedModeBanner: false,
-        routes: <String, WidgetBuilder> {
-          "/root" : (BuildContext countext) => RootWidget(),
-          "/screen1" : (BuildContext countext) => Screen1(),
-          "/screen2" : (BuildContext countext) => Screen2(),
-
+        routes: <String, WidgetBuilder>{
+          "/root": (BuildContext countext) => RootWidget(),
+          "/screen1": (BuildContext countext) => Screen1(),
+          "/screen2": (BuildContext countext) => Screen2(),
         },
-        home: RootWidget()
-    );
+        home: RootWidget());
   }
 }
