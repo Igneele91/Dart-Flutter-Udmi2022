@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_grundlagen/presentation/counter_app/widgets/counter_app_page.dart';
+import 'package:flutter_grundlagen/presentation/theme_animation/theme_animation_page.dart';
 import 'package:flutter_grundlagen/presentation/widgets_examples/widgets_examples_page.dart';
 
 class RootWidget extends StatefulWidget {
@@ -15,15 +16,14 @@ class _RootWidgetState extends State<RootWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       body: IndexedStack(
         index: _currentIndex,
-        children: [
+        children: const [
           WidgetsExamplesPage(),
-          CounterAppPage()
+          CounterAppPage(),
+          ThemeAnimationPage()
         ],
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         onTap: (index) {
           setState(() {
@@ -34,9 +34,10 @@ class _RootWidgetState extends State<RootWidget> {
         unselectedItemColor: Colors.grey,
         selectedItemColor: Colors.white,
         backgroundColor: Colors.blue,
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.star), label: "examples"),
           BottomNavigationBarItem(icon: Icon(Icons.add), label: "counter"),
+          BottomNavigationBarItem(icon: Icon(Icons.color_lens), label: "theme"),
         ],
       ),
     );
