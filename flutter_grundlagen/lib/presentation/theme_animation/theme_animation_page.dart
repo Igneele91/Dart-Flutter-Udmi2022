@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:fluttergrundlagen/application/theme_service.dart';
-import 'package:fluttergrundlagen/presentation/theme_animation/widgets/moon.dart';
-import 'package:fluttergrundlagen/presentation/theme_animation/widgets/star.dart';
-import 'package:fluttergrundlagen/presentation/theme_animation/widgets/sun.dart';
-import 'package:fluttergrundlagen/presentation/theme_animation/widgets/theme_switch.dart';
+import 'package:flutter_grundlagen/presentation/theme_animation/widgets/moon.dart';
+import 'package:flutter_grundlagen/presentation/theme_animation/widgets/star.dart';
+import 'package:flutter_grundlagen/presentation/theme_animation/widgets/sun.dart';
+import 'package:flutter_grundlagen/presentation/theme_animation/widgets/theme_switch.dart';
 import 'package:provider/provider.dart';
+
+import '../../application/theme_service.dart';
 
 class ThemeAnimationPage extends StatelessWidget {
   const ThemeAnimationPage({Key? key}) : super(key: key);
@@ -35,15 +36,15 @@ class ThemeAnimationPage extends StatelessWidget {
                       gradient: LinearGradient(
                           colors: themeServie.isDarkModeOn
                               ? const [
-                            Color(0xFF94A9FF),
-                            Color(0xFF6B66CC),
-                            Color(0xFF200F75),
-                          ]
+                                  Color(0xFF94A9FF),
+                                  Color(0xFF6B66CC),
+                                  Color(0xFF200F75),
+                                ]
                               : [
-                            const Color(0xDDFFFA66),
-                            const Color(0xDDFFA057),
-                            const Color(0xDD940B99)
-                          ],
+                                  const Color(0xDDFFFA66),
+                                  const Color(0xDDFFA057),
+                                  const Color(0xDD940B99)
+                                ],
                           begin: Alignment.bottomCenter,
                           end: Alignment.topCenter)),
                   child: Stack(
