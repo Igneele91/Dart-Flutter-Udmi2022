@@ -7,7 +7,7 @@ class RootWidget extends StatefulWidget {
   const RootWidget({Key? key}) : super(key: key);
 
   @override
-  State<RootWidget> createState() => _RootWidgetState();
+  _RootWidgetState createState() => _RootWidgetState();
 }
 
 class _RootWidgetState extends State<RootWidget> {
@@ -25,21 +25,20 @@ class _RootWidgetState extends State<RootWidget> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        onTap: (index) {
-          setState(() {
-            _currentIndex = index;
-          });
-        },
-        currentIndex: _currentIndex,
-        unselectedItemColor: Colors.grey,
-        selectedItemColor: Colors.white,
-        backgroundColor: Colors.blue,
-        items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.star), label: "examples"),
-          BottomNavigationBarItem(icon: Icon(Icons.add), label: "counter"),
-          BottomNavigationBarItem(icon: Icon(Icons.color_lens), label: "theme"),
-        ],
-      ),
+          onTap: (index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          },
+          currentIndex: _currentIndex,
+          unselectedItemColor: Colors.grey,
+          selectedItemColor: Colors.white,
+          backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
+          items: const [
+            BottomNavigationBarItem(icon: Icon(Icons.star), label: "examples"),
+            BottomNavigationBarItem(icon: Icon(Icons.add), label: "counter"),
+            BottomNavigationBarItem(icon: Icon(Icons.color_lens), label: "theme"),
+          ]),
     );
   }
 }

@@ -23,7 +23,7 @@ class WidgetsExamplesPage extends StatelessWidget {
           size: 30,
         ),
         centerTitle: true,
-        backgroundColor: Colors.pink[200],
+        backgroundColor: Colors.blue[900],
         title: const Text("Widgets Examples"),
       ),
       body: SingleChildScrollView(
