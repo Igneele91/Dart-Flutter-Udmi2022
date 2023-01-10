@@ -15,7 +15,9 @@ class Screen1 extends StatelessWidget {
         child: CustomButton(
             onPressed: () {
               Navigator.of(context).pop();
-            }, text: "Navigate Back", buttonColor: Colors.green),
+            },
+            text: "Navigate Back",
+            buttonColor: Colors.green),
       ),
     );
   }

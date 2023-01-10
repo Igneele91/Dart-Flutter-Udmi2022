@@ -84,9 +84,9 @@ class WidgetsExamplesPage extends StatelessWidget {
               CustomButton( // wenn er die farbe nicht findet ! wegen null verwende
                 buttonColor: Colors.orange[200]!,
                   onPressed: () {
-                    print("Custom Button Pressed 1!");
+                    Navigator.of(context).pushNamed("/screen2");
                   },
-                  text: 'Button 1'),
+                  text: 'Go to Screen 2'),
               const SizedBox(
                 height: 30,
               ),
@@ -94,7 +94,7 @@ class WidgetsExamplesPage extends StatelessWidget {
                 buttonColor: Colors.green[200]!,
                 onPressed: () {
                   Navigator.of(context).pushNamed("/screen1");
-                  print("Custom Button Pressed 2! ");
+
                 },
                 text: 'Go to Screen 1',
               )
